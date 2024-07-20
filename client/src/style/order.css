@@ -1,0 +1,255 @@
+.order-page{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Defines the display of a single product container*/
+.order-card {
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top:10px;
+    margin-bottom:10px;
+    height: 150px;
+    width:66px;
+    display:grid;
+    justify-content: center;
+}
+
+.total{
+    border:none;
+    font-size:10px;
+}
+
+input[type=button]:hover{
+    cursor: pointer;
+}
+
+/* comment box wrapper*/
+.center {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 70px;
+    width: 200px;
+    border: 1px solid green;
+    padding: 5px;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.comment-save-button{
+    width: 100px;
+    margin-left: 0px;
+}
+
+/* Defines the style of the check-out-button inside the shopping cart component*/
+#check-out-button{
+    width:max-content;
+    font-size:8px;
+}
+
+form{
+    display: flex;
+    width:40px;
+    margin-left:11px;
+}
+
+#order-right-child{
+    width:27px;
+    height:14px;
+    padding-block: 1px;
+    padding-inline: 2px;
+    font-size:8px;
+}
+
+/*left child*/
+input[type=number]{
+    width:10px;
+    height:8px;
+    padding-block: 1px;
+    padding-inline: 2px;
+    font-size:8px;
+}
+
+/* View details button*/
+.order-lower-child{
+    margin-left: 8px;
+    width: 50px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    font-size: 7px;
+    padding: 3px;
+    height:min-content;
+}
+
+/* Defines the style of the shopping cart component on the top-right corner*/
+.cart{
+    font-size: 20px; 
+    position:fixed;
+    top: 30px;
+    right: 30px;
+}
+
+.cart-icon{
+    width: 20px;
+}
+
+textarea{
+    font-size: 10px;
+}
+
+h2{
+    font-size: 20px;
+}
+
+/* Tablet */ 
+@media (min-width: 550px) {
+    h2{
+        font-size: 30px;
+    }
+
+    .order-card {
+        width:120px;
+        height: 250px;
+    }
+
+    /* comment box wrapper*/
+    .center {
+        border-width: 2px;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        margin-left: 250px;
+    }
+
+    textarea{
+        font-size: 14px;
+    }
+
+    .total{
+        font-size:14px;
+    }
+
+    form{
+        width:60px;
+        margin-left:30px;
+        margin-top:10px;
+    }
+    
+    #order-right-child{
+        width:32px;
+        height:18px;
+        padding-block: 1px;
+        padding-inline: 2px;
+        font-size:8px;
+    }
+
+    .order-lower-child{
+        margin-top:10px;
+        margin-bottom:10px;
+        width: 100px;
+        margin-left:15px;
+        font-size:8px;
+        height: 15px;
+    }
+    
+    /*left child*/
+    input[type=number]{
+        width:20px;
+        height:12px;
+        padding-block: 1px;
+        padding-inline: 2px;
+        font-size:8px;
+    }
+
+    h3{
+        font-size:12px;
+    }
+
+    .cart-icon{
+        width: 35px;
+    }
+
+    #check-out-button{
+        font-size:14px;
+    }
+
+}
+
+/* Desktop */ 
+@media (min-width: 800px) {
+    .order-card {
+        height: 420px;
+        width:300px;
+    }
+
+    /* comment box wrapper*/
+    .center {
+        border-width: 3px;
+        margin-top: 50px;
+        width: 300px;
+        height: 200px;
+        margin-left: 400px;
+    }
+
+    textarea{
+        width:280px;
+        font-size: 18px;
+    }
+
+    form{
+        width:60px;
+        margin-left:120px;
+        margin-top:10px;
+    }
+    
+    #order-right-child{
+        width:50px;
+        height:30px;
+        padding-block: 1px;
+        padding-inline: 2px;
+        font-size:15px;
+    }
+
+    /* View details button*/
+    .order-lower-child{
+        width: 200px;
+        font-size: 17px;
+        padding: 3px;
+        height:35px;
+        margin-left:60px;
+    }
+    
+    /*left child*/
+    input[type=number]{
+        width:25px;
+        height:24px;
+        padding-block: 1px;
+        padding-inline: 2px;
+        font-size:15px;
+    }
+
+    .total{
+        font-size:20px;
+    }
+
+    .cart{
+        top: 60px;
+        right: 100px;
+    }
+
+    .cart-icon{
+        width: 50px;
+    }
+
+    #check-out-button{
+        font-size:18px;
+    }
+
+    h3{
+        font-size:17px;
+    }
+}

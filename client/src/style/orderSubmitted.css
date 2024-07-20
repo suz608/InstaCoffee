@@ -1,0 +1,27 @@
+.sub-center {
+    margin-top: 10%;
+    width: 50%;
+    margin-left:25%;
+    margin-right:25%;
+    border: 3px solid green;
+    padding: 20px;
+}
+
+.sub-h2{
+    margin-top:0px;
+    font-size:20px;
+}
+
+/* Tablet */ 
+@media (min-width: 550px) {
+    .sub-h2{
+        font-size:35px;
+    }
+}
+
+/* Desktop */ 
+@media (min-width: 800px) {
+    .sub-h2{
+        font-size:40px;
+    }
+}

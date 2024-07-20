@@ -1,0 +1,138 @@
+.product-container{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Defines the display of a single product container*/
+.menu-card {
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    display:table-row-group;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top:10px;
+    margin-bottom:10px;
+    height: 130px;
+    width:66px;
+}
+
+/* Defines the style of the back button on the top-left corner*/
+.spec{
+    position:fixed;
+    left:7%
+}
+
+/* remove under line of 'view detail' and 'back to homepage */
+a:link{
+    text-decoration:none;
+    border:none;
+    padding: 0px;
+}
+
+.menu-h3{
+    font-size: 7px;
+}
+
+.menu-label{
+    font-size: 7px;
+}
+
+/* View details button*/
+.lower-child{
+    margin-left: 8px;
+    width: 50px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 7px;
+    padding: 3px;
+    height:min-content;
+}
+
+
+h2 {
+    text-align: center;
+    font-family: 'Trocchi', cursive;
+    color: #d54d7b;
+    font-size:20px;
+    margin-top: 30px;
+}
+
+.save-button{
+    margin-left: 200px;
+}
+
+/* tablet */ 
+@media (min-width: 550px) {
+    .product-container{
+        gap: 20px;
+    }
+
+    .menu-card {
+        width: 140px;
+        height: 235px;
+    }
+
+    .lower-child{
+        margin-top:10px;
+        margin-bottom:10px;
+        width: 100px;
+        margin-left:20px;
+        font-size:11px;
+        height: 25px;
+    }
+
+    .h2{
+        font-size:30px;
+        margin-top: 60px;
+    }
+
+    .menu-h3{
+        font-size: 14px;
+    }
+    
+    .menu-label{
+        font-size: 14px;
+    }
+
+}
+
+/* Desktop*/ 
+@media (min-width: 800px) {
+    .product-container{
+        gap: 20px;
+    }
+
+    .menu-card {
+        width: 300px;
+        height: 370px;
+    }
+
+    .lower-child{
+        margin-top:15px;
+        margin-bottom:15px;
+        width: 150px;
+        margin-left:75px;
+        font-size:18px;
+        height: 30px;
+    }
+
+    input[type=button]{
+        font-size: large;
+    }
+
+    h2{
+        font-size:40px;
+        margin-top: 100px;
+    }
+
+    .menu-h3{
+        font-size: 20px;
+    }
+    
+    .menu-label{
+        font-size: 20px;
+    }
+
+}

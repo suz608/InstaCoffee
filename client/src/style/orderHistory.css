@@ -1,0 +1,52 @@
+.order-history-container{
+    max-height: 360px; 
+    overflow-y: auto; 
+    border-style: solid;
+    border-color: #729343;
+    margin-top: 100px;
+    width: 120px;
+    margin-left: 0px;
+}
+
+.order-history-title{
+    margin-left:13px;
+}
+
+.order-content{
+    border-color: grey;
+    border-top-style: dotted;
+    padding:10px;
+}
+
+/* Tablet */ 
+@media (min-width: 550px) {
+
+    .order-history-title{
+        margin-left:16px;
+        font-size: 15px;
+    }
+
+    .order-content{
+        font-size:10px;
+        padding:12px;
+    }
+}
+
+/* Desktop */ 
+@media (min-width: 800px) {
+
+    .order-history-container{
+        width: 270px;
+    }
+
+    .order-history-title{
+        margin-left:35px;
+        font-size: 18px;
+    }
+
+    .order-content{
+        font-size:15px;
+        padding: 14px;
+    }
+
+}

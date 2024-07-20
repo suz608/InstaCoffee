@@ -1,0 +1,23 @@
+.require-login{
+    display:grid;
+    place-items: center;
+}
+
+.require-login-h2{
+    font-size:25px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Tablet */ 
+@media (min-width: 550px) {
+    .require-login-h2{
+        font-size:40px;
+    }
+}
+
+/* Desktop */ 
+@media (min-width: 800px) {
+    .require-login-h2{
+        font-size:50px;
+    }
+}

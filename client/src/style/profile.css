@@ -1,0 +1,131 @@
+.profile{
+    display:grid;
+    place-items:center;
+}
+
+.profile-container {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 200px;
+    margin: auto;
+    text-align: left;
+    padding:10px;
+}
+
+.profile-form{
+    margin-left:0px;
+    margin-bottom:10px;
+}
+
+.profile-name{
+    font-size: 16px;
+}
+
+.order-history{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 200px;
+    text-align: left;
+    padding:10px;
+}
+
+.order{
+    border-color: grey;
+    border-top-style: dotted;
+    width: 100%;
+}
+
+.profile-button {
+    border: none;
+    outline: 0;
+    display: block;
+    color: white;
+    background-color:#729343;
+    text-align: center;
+    cursor: pointer;
+    width: max-content;
+    padding: 2px;
+    font-size: 9px;
+    width: 30px;
+    margin-left:60px;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+.profile-img{
+    width: 45px;
+    margin-left: 80px;
+}
+
+.profile-order-history{
+    font-size:14px;
+}
+
+/* tablet */
+@media (min-width: 550px) {
+    .profile-order-history{
+        font-size:15px;
+        padding:20px;
+    }    
+    .profile-img{
+        width: 70px;
+        margin-left:95px;
+    }
+    .profile-container {
+        width: 250px;
+        padding:20px;
+    }
+
+    .profile-form{
+        margin-left:20px;
+        margin-bottom:10px;
+    }
+
+    .order-history{
+        width: 250px;
+    }
+    .profile-name{
+        font-size: 20px;
+    }
+    .profile-button{
+        padding: 7px;
+        font-size: 12px;
+        width: 50px;
+        margin-left:105px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 800px) {
+    .profile-order-history{
+        font-size:18px;
+    }    
+
+    .profile-button{
+        padding: 7px;
+        font-size: 15px;
+        width: 50px;
+        margin-left:120px;
+    }
+
+    .profile-container {
+        width: 300px;
+    }
+
+    .order-history{
+        width: 300px;
+        padding:20px;
+    }
+
+    .profile-name{
+        font-size: 26px;
+    }
+
+    .profile-image{
+        margin-left:110px;
+    }
+    
+    .profile-form{
+        margin-left:50px;
+    }
+}
