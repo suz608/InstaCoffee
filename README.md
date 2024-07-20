@@ -1,4 +1,4 @@
-This is a web app I wrote in March-April 2024.
+- This is a web app I wrote in March-April 2024.
 The api folder has all the backend(server-side) code.
 The client folder has all the frontend(client-side) code.
 The server-side code is written in JavaScript. The client-side code is written with ReactJS, JavaScript, and CSS
