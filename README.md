@@ -110,25 +110,25 @@ npm start
 ## API Documentation
 The backend API serves the following endpoints:
 ### Store APIs
-- GET /items
+- **GET /items/**
   Fetches all items of the coffee shop.   
-- GET /items/:id
+- **GET /items/:id**
   Fetch a store item by id.   
-- GET /top4seller
+- **GET /top4seller**
   Fetch the most sold 4 items.   
-- PUT /updatesold/:id
+- **PUT /updatesold/:id**
   Update sold number by item id.      
 
 ### User APIs
-- GET /profile
+- **GET /profile**
   Fetch the profile of current user.   
-- POST /create-order
+- **POST /create-order**
   Place an order under the acount of current user.   
-- GET /orders
+- **GET /orders**
   Fetch all orders place by the current user.   
-- PUT /change/name
+- **PUT /change/name**
   Update username.   
-- POST /verify-user
+- **POST /verify-user**
   Verify if user is already in the database.   
 
 ### External APIs
