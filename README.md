@@ -3,7 +3,7 @@ InstaCoffee is a React.js coffee shop web application that allows users to brows
 
 [Video Demonstration](https://youtu.be/a2Tx6ue__hc)   
 
-[Live App](https://instacoffee.vercel.app/) (Depreciated on Mar 2024)
+[Live App](https://instacoffee.vercel.app/) (Depreciated on May 2024)
 
 ---
 
