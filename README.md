@@ -1,7 +1,7 @@
 # InstaCoffee - Coffee Shop Web Application
 InstaCoffee is a React-based coffee shop web application that allows users to browse the menu, get directions to the store, create and log into personal accounts, place orders online, and modify their profiles.
 
-[Video Demonstration]([https://www.figma.com/](https://youtu.be/a2Tx6ue__hc))
+[Video Demonstration](https://youtu.be/a2Tx6ue__hc))
 [Live App](https://instacoffee.vercel.app/) (Depreciated on Mar 2024)
 
 ---
@@ -68,6 +68,60 @@ cd instacoffee
 ### 2. Install Dependencies
 - Frontend
 ```
+cd client
+npm install
+```
+- Backend
+```
+cd api
+npm install
+```
+### 3. Configure Environment Variables
+Create a .env file in both the api and client folders and add the following environment variables:
+
+For the backend (api/.env):
+```
+DATABASE_URL=your_database_url_here
+AUTH0_CLIENT_ID=your_auth0_client_id
+AUTH0_CLIENT_SECRET=your_auth0_client_secret
+AUTH0_DOMAIN=your_auth0_domain
+```
+For the frontend (client/.env):
+```
+REACT_APP_AUTH0_CLIENT_ID=your_auth0_client_id
+REACT_APP_AUTH0_DOMAIN=your_auth0_domain
+```
+You can get your AUTH0_CLIENT_ID, AUTH0_CLIENT_SECRET, and AUTH0_DOMAIN from [Auth0](https://auth0.com/)
+### 4. Run the Application Locally
+Backend (API):
+```
+cd api
+npm start
+```
+Frontend (Client):
+```
+cd client
+npm start
+```
+
+---
+
+## API Documentation
+The backend API is built with Express.js, serving the following endpoints:
 
 
+## Testing
+### Running Tests
+To run the tests for the frontend, navigate to the client directory and run:
+```
+npm test
+```
+
+## Deployment
+Frontend Deployment: The frontend is deployed on Vercel. Simply push your changes to the repository, and Vercel will automatically deploy the app.
+
+Backend Deployment: The backend API and PostgreSQL database are deployed using Render. Ensure your DATABASE_URL is set to the Render database connection string.
+
+## License
+This project is open-source and available under the MIT License.
 
