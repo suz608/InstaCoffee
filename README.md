@@ -1,7 +1,7 @@
 # InstaCoffee - Coffee Shop Web Application
 InstaCoffee is a React-based coffee shop web application that allows users to browse the menu, get directions to the store, create and log into personal accounts, place orders online, and modify their profiles.
 
-[Video Demonstration](https://youtu.be/a2Tx6ue__hc))
+[Video Demonstration](https://youtu.be/a2Tx6ue__hc)
 [Live App](https://instacoffee.vercel.app/) (Depreciated on Mar 2024)
 
 ---
@@ -21,7 +21,7 @@ InstaCoffee is a React-based coffee shop web application that allows users to br
 - **Menu Browsing**: Users can view the coffee shop menu and place orders online.
 - **Authentication**: Users can create accounts, log in, and manage profiles using secure authentication powered by Auth0.
 - **Real-time Weather Updates**: Displays the local weather to help users plan their visits.
-- **Map Services**: Get directions to the store using map integrations.
+- **Map Services**: Get directions to the store via a chatbot window.
 - **Order Management**: Users can place orders and modify their profile information.
 - **Profile Management**: Users can update their personal information and order history.
 
@@ -42,8 +42,8 @@ InstaCoffee is a React-based coffee shop web application that allows users to br
 - **Authentication**: 
   - Auth0 (for secure user authentication)
 - **External APIs**:
-  - Real-time weather
-  - Map
+  - Real-time weather: [OpenWeather](https://openweathermap.org/)
+  - Map: [Driving Directions](https://rapidapi.com/letscrape-6bRBa3QguO5/api/driving-directions1)
 - **Testing**: 
   - React Testing Library (for unit testing)
 
@@ -107,8 +107,23 @@ npm start
 ---
 
 ## API Documentation
-The backend API is built with Express.js, serving the following endpoints:
+The backend API serves the following endpoints:
+### Store APIs
+GET /items Fetches all items of the coffee shop.
+GET /items/:id Fetch a store item by id.
+GET /top4seller Fetch the most sold 4 items.
+PUT /updatesold/:id Update sold number by item id
 
+### User APIs
+GET /profile Fetch the profile of current user.
+POST /create-order Place an order under the acount of current user.
+GET /orders Fetch all orders place by the current user.
+PUT /change/name Update username.
+POST /verify-user Verify if user is already in the database.
+
+### External APIs
+- Real-time weather API provided by [OpenWeather](https://openweathermap.org/)
+- Map API provided by [Driving Directions](https://rapidapi.com/letscrape-6bRBa3QguO5/api/driving-directions1)
 
 ## Testing
 ### Running Tests
