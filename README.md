@@ -1,7 +1,7 @@
 # InstaCoffee - Coffee Shop Web Application
 InstaCoffee is a React.js app that allows coffee shop customers to browse menu, get directions to the store, create and log into personal accounts, place orders online and modify their profiles.
 
-[Video Demonstration](https://youtu.be/a2Tx6ue__hc)   
+[Video of the App in action](https://youtu.be/a2Tx6ue__hc)   
 
 [Live App](https://instacoffee.vercel.app/) (Depreciated on May 2024)
 
