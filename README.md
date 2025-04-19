@@ -1,17 +1,13 @@
 # InstaCoffee - Coffee Shop Web Application
 InstaCoffee is a React.js app that allows coffee shop customers to browse menu, get directions to the store, create and log into personal accounts, place orders online and modify their profiles.
 
-[Video of the App in action](https://youtu.be/a2Tx6ue__hc)   
-
-[Live App](https://instacoffee.vercel.app/) (Out of service since May 2024)
-
 ---
 
 ## Table of Contents
 - [Features](#features)
 - [Technologies](#technologies)
 - [Setup and Installation](#setup-and-installation)
-- [API Documentation](#api-documentation)
+- [APIs](#apis)
 - [Testing](#testing)
 - [Deployment](#deployment)
 - [License](#license)
@@ -56,14 +52,14 @@ To run this project locally, follow the steps below:
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (v14 or higher)
+- [Node.js](https://nodejs.org/) (16.13 or higher)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) (package managers)
 - A [PostgreSQL database](https://www.postgresql.org/) (for local development or use a cloud database)
 
 ### 1. Clone the Repository
 
 ```
-git clone https://github.com/yourusername/instacoffee.git
+git clone https://github.com/suz608/instacoffee.git
 cd instacoffee
 ```
 ### 2. Install Dependencies
@@ -107,8 +103,8 @@ npm start
 
 ---
 
-## API Documentation
-The backend API serves the following endpoints:
+## APIs
+The backend serves the following API endpoints:
 ### Store APIs
 - **GET /items/**
   Fetches all items of the coffee shop.   
@@ -129,7 +125,7 @@ The backend API serves the following endpoints:
 - **PUT /change/name**
   Update username.   
 - **POST /verify-user**
-  Verify if user is already in the database.   
+  Verify if a user is in the database.   
 
 ### External APIs
 - Real-time weather API provided by [OpenWeather](https://openweathermap.org/)
@@ -143,9 +139,11 @@ npm test
 ```
 
 ## Deployment
-Frontend Deployment: The frontend is deployed on Vercel. Simply push your changes to the repository, and Vercel will automatically deploy the app.
+Frontend Deployment: The frontend is deployed using Vercel.
 
-Backend Deployment: The backend API and PostgreSQL database are deployed using Render. Ensure your DATABASE_URL is set to the Render database connection string.
+Backend Deployment: The backend APIs and a PostgreSQL database are deployed using Render.
+
+[Deployed Address](https://instacoffee.vercel.app/) (Out of service because the free trial of the database expired.)
 
 ## License
 This project is open-source and available under the MIT License.
