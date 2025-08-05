@@ -1,3 +1,4 @@
+// Order history component
 import useOrder from "../hooks/useOrder.js"
 import "../style/orderHistory.css";
 

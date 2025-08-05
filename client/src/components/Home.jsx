@@ -31,7 +31,7 @@ export default function Home() {
     return (
         <div className="home">
 
-        <img className="store-icon" src = "https://github.com/suz608/public-repo/blob/main/logo.png?raw=true" alt="Insta Store" id="logo"></img>
+        <img className="store-icon" src="/logo.png" alt="Insta Store" id="logo" />
         <nav className="menu">
           <ul className="menu-items">
             <li><a href="/">Home</a></li>

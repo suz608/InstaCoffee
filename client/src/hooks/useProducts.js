@@ -1,32 +1,17 @@
-import { useState, useEffect } from "react";
+// src/hooks/useProducts.js
+import { useDispatch, useSelector } from 'react-redux';
+import { useEffect } from 'react';
+import { fetchProducts } from '../redux/productSlice';
 
-// a custom hook that fetches products from the API
 export default function useProducts() {
-  const [products, setProducts] = useState(null);
+    const dispatch = useDispatch();
+    const { products, loading, error } = useSelector((state) => state.products);
 
-  useEffect(() => {
-    async function getProductsFromApi() {
-      try{
-        const data = await fetch(`${process.env.REACT_APP_API_URL}/items`, {
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
-        const pro = await data.json();
-        setProducts(pro);
-      }catch(e){
-        const mockProduct = {
-          id:1,
-          name   : "server problem",
-          category   :"Add ons",
-          price :   5.8,
-          detail:   "We are having problems with the server...Sorry for inconvenience."
-        };
-        setProducts(mockProduct);
-      }
-    }
-    getProductsFromApi();
-  }, []);
+    useEffect(() => {
+        // Dispatch the action to fetch products
+        dispatch(fetchProducts());
+    }, [dispatch]);
 
-  return [products];
+    // Return the products, loading, and error states
+    return { products, loading, error };
 }

@@ -1,3 +1,4 @@
+// Order page
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Link, useNavigate } from "react-router-dom";
@@ -129,7 +130,7 @@ export default function Order (){
             <br></br>
 
             <div className="cart">
-                <img className="cart-icon" src = "https://github.com/suz608/public-repo/blob/main/cart.png?raw=true" alt="shopping cart label" width="50px"></img>
+                <img className="cart-icon" src = "./cart.png" alt="shopping cart label" width="50px"></img>
                 <label>Your total is:</label><input className="total" id="total" type="button" value="0"></input>
                 <button id="check-out-button" type="submit" onClick={submitOrder}>Check out</button>
             </div>

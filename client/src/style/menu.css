@@ -18,6 +18,13 @@
     width:66px;
 }
 
+/* Restrict the product image size to 220px by 220px */
+.menu-card img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover; /* Ensure the image fills the box without distortion */
+}
+
 /* Defines the style of the back button on the top-left corner*/
 .spec{
     position:fixed;

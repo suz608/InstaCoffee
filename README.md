@@ -29,20 +29,21 @@ InstaCoffee is a React.js app that allows coffee shop customers to browse menu, 
   - React.js
   - JavaScript
   - CSS
+  - Redux
 - **Backend**: 
   - Node.js
   - Express.js
   - JavaScript
 - **Database**: 
-  - Postgres SQL (hosted on Render)
-  - Prisma (for querying and managing database interactions)
+  - Postgres SQL
+  - Prisma
 - **Authentication**: 
-  - Auth0 (for secure user authentication)
+  - Auth0
 - **External APIs**:
   - Real-time weather: [OpenWeather](https://openweathermap.org/)
   - Map: [Driving Directions](https://rapidapi.com/letscrape-6bRBa3QguO5/api/driving-directions1)
 - **Testing**: 
-  - React Testing Library (for unit testing)
+  - React Testing Library
 
 ---
 
@@ -52,7 +53,7 @@ To run this project locally, follow the steps below:
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (16.13 or higher)
+- [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/) (package managers)
 - A [PostgreSQL database](https://www.postgresql.org/) (for local development or use a cloud database)
 
@@ -147,4 +148,3 @@ Backend Deployment: The backend APIs and a PostgreSQL database are deployed usin
 
 ## License
 This project is open-source and available under the MIT License.
-
